@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Password Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">The Password</div>
+        <div class="social-links">
+            <a href="https://github.com/rahulxiao" target="_blank" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.facebook.com/rahulxiao" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://www.linkedin.com/in/rahul-biswas-6a2993232/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://rahulxiao.github.io/rahul/" target="_blank" class="social-link"><i class="fas fa-briefcase"></i> Portfolio</a>
+            <a href="https://www.instagram.com/rahulxiao/" target="_blank" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="game-title">
+            <i class="fa-solid fa-star"></i>
+            <h1>The Password Game</h1>
+            <i class="fa-solid fa-star"></i>
+        </div>
+
+        <div class="game-container">
+            <div id="password-input-container">
+                <label for="password-input">Please choose a password</label>
+                <input type="text" id="password-input" autocomplete="off" spellcheck="false">
+                <div class="char-counter">0</div>
+                <div class="next-rule-container">
+                    <div class="next-rule-text"></div>
+                </div>
+            </div>
+
+            <div id="rules-container">
+                <!-- Rules will be dynamically added here -->
+            </div>
+
+            <div id="level-completion" class="hidden">
+                <h2>Congratulations!</h2>
+                <p>You have successfully created a password that meets all <span id="total-rules">0</span> requirements!</p>
+                <p class="password-summary">Your final password: <span id="final-password"></span></p>
+                <button id="restart-button">Play Again</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created By <a href="https://github.com/rahulxiao" target="_blank">rahulxiao</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
