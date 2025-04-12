@@ -484,9 +484,9 @@ document.addEventListener('DOMContentLoaded', function() {
             validate: (password) => /([AKQJ]|10|[2-9])[♠♥♦♣]/.test(password)
         },
         {
-            id: 'year',
-            description: 'Your password must include a year between 1900 and 2099.',
-            validate: (password) => /\b(19|20)\d{2}\b/.test(password)
+                id: 'year',
+                description: 'Your password must include any 4-digit number.',
+                validate: (password) => /\b\d{4}\b/.test(password)              
         },
         {
             id: 'metric',
